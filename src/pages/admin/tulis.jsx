@@ -14,7 +14,7 @@ const Tulis = () => (
 					<div 
 						className="focus:outline-none p-2 bg-green-200 overflow-auto rounded" 
 						contenteditable 
-						onInput={x => setData({tulisan: x.target.innerHTML})} 
+						onInput={x => setData({tulisan: x.target.innerHTML})}
 						innerHTML={data().tulisan}
 					></div>
 					<textarea 
