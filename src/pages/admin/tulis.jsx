@@ -2,7 +2,6 @@ import {Portal} from 'solid-js/web'
 import {createSignal, createEffect} from 'solid-js'
 
 const [data, setData] = createSignal({tulisan: '<p>hello <strong>world</strong></p>'})
-const [tulisan, setTulisan] = createSignal('')
 
 const Tulis = () => (
 	<div>
@@ -21,8 +20,6 @@ const Tulis = () => (
 					<textarea 
 						value={data().tulisan} 
 						onInput={x => setData({tulisan: x.target.value})} 
-						cols="30" 
-						rows="10" 
 						className="bg-green-200 p-2 focus:outline-none rounded"
 					></textarea>
 				</div>
