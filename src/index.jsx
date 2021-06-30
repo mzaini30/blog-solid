@@ -1,6 +1,11 @@
 import { render } from "solid-js/web";
-
-import "./index.css";
+import {Router} from 'solid-app-router'
 import App from "./App";
+import {routes} from './routes'
+import 'virtual:windi.css'
 
-render(App, document.getElementById("root"));
+render(() => (
+	<Router routes={routes}>
+		<App></App>
+	</Router>
+), document.querySelector('#root'))
